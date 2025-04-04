@@ -2,7 +2,7 @@
 layout: post
 title: "Welcome to My Site"
 date: 2025-04-04
-categories: jekyll update
+categories: blog
 ---
 
 # Welcome to My Jekyll Site!

@@ -1,4 +1,5 @@
-title: My Jekyll Site
-description: A personal site to showcase my work
-theme: jekyll-theme-cayman
-url: https://salasnorman.github.io
+title: My Jekyll Blog
+description: A simple blog using GitHub Pages and Jekyll
+theme: minima
+plugins:
+  - jekyll-feed
