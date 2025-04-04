@@ -1,13 +1,12 @@
 ---
-layout: default
+layout: home
 title: Welcome to My Site
 ---
 
-# Welcome to my Jekyll site!
+## My Projects
 
-This is where I showcase my projects and blog posts.
+Here are some of my GitHub repositories:
 
-[Visit My Blog](https://salasnorman.github.io/blog)  
-<!-- Replace 'username' with your GitHub username -->
-
-Stay tuned for more updates!
+- [Image Classifier](https://github.com/SalasNorman/image-classifier)
+- [Workshop](https://github.com/SalasNorman/workshop)
+- [Iris ML App](https://github.com/SalasNorman/iris-ml-app)
