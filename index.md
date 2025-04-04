@@ -7,6 +7,6 @@ title: Welcome to My Site
 
 Here are some of my GitHub repositories:
 
-- [Image Classifier](https://github.com/SalasNorman/image-classifier)
-- [Workshop](https://github.com/SalasNorman/workshop)
-- [Iris ML App](https://github.com/SalasNorman/iris-ml-app)
+{% for repo in site.data.repositories %}
+- [{{ repo.name }}]({{ repo.url }})
+{% endfor %}
