@@ -3,6 +3,6 @@ description: Learning new things.
 url: "https://your-username.github.io"
 theme: jekyll-theme-minimal
 
-social:
+social_links:
   linkedin: "https://www.linkedin.com/in/salasnorman/"
   huggingface: "https://huggingface.co/SalasNorman"
