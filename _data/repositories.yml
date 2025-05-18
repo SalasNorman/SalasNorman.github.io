@@ -1,8 +1,0 @@
-- name: Image Classifier
-  url: https://github.com/SalasNorman/image-classifier
-
-- name: Workshop
-  url: https://github.com/SalasNorman/workshop
-
-- name: Iris ML App
-  url: https://github.com/SalasNorman/iris-ml-app
