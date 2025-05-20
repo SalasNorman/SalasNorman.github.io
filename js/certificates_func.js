@@ -1,14 +1,6 @@
 // Simple filter state
 let selectedOrg = "", selectedTech = "";
 
-// Badge style mapping (simplified)
-const badgeStyles = {
-  Python: "background-color: yellow; color: black;",
-  Java: "background-color: orange; color: white;",
-  "Machine Learning": "background-color: cyan; color: black;",
-  "Google Cloud": "background-color: deepskyblue; color: white;"
-};
-
 // Render filter dropdowns
 function renderFilters() {
   const orgs = [...new Set(certificates.map(c => c.organization).filter(Boolean))];
@@ -34,7 +26,7 @@ function renderCertificates(data) {
         <div class="card-body">
           <h5 class="card-title">${cert.title}</h5>
           <span class="badge me-1 bg-info text-dark">${cert.organization}</span>
-          ${(cert.techStack||[]).filter(Boolean).map(b=>`<span class="badge me-1" style="${badgeStyles[b]||'background-color:gray; color:white;'}">${b}</span>`).join('')}
+          ${(cert.techStack||[]).filter(Boolean).map(b=>`<span class="badge me-1" style="background-color:gray; color:white;">${b}</span>`).join('')}
         </div>
       </div>
     </div>
@@ -55,7 +47,7 @@ function showModal(cert) {
   document.getElementById("certificateModalLabel").textContent = cert.title;
   document.getElementById("modalCertBadges").innerHTML =
     `<span class="badge me-1 bg-info text-dark">${cert.organization}</span>` +
-    (cert.techStack||[]).filter(Boolean).map(b=>`<span class="badge me-1" style="${badgeStyles[b]||'background-color:gray; color:white;'}">${b}</span>`).join('');
+    (cert.techStack||[]).filter(Boolean).map(b=>`<span class="badge me-1" style="background-color:gray; color:white;">${b}</span>`).join('');
   new bootstrap.Modal(document.getElementById("certificateModal")).show();
 }
 
