@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SalasNorman</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="bg-dark text-light font-monospace">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-secondary border-bottom border-secondary">
+    <div class="container">
+      <a class="navbar-brand text-light" href="index.html">SalasNorman</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active text-light" href="index.html">About</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="certificates.html">Certificates</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="container py-5">
+    <div class="row g-4 align-items-center">
+      <!-- Left Column: Profile Card -->
+      <div class="col-lg-5">
+        <div class="card bg-secondary text-light border border-secondary shadow-sm">
+          <div class="card-body text-center">
+            <img src="assets/profile_pic.png" class="img-fluid rounded-circle mb-3" alt="Profile Picture" style="width: 120px; height: 120px; object-fit: cover;">
+            <h3 class="mb-1">Norman Salas</h3>
+            <p class="text-info mb-2">Web Development | Machine Learning</p>
+            <p class="mb-3 small text-light">
+              Passionate about web development.<br>
+              Looking for job opportunities.
+            </p>
+            <hr class="border-secondary">
+            <!-- Languages -->
+            <h6 class="mb-2 text-info">Languages</h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20" class="me-1"> Python
+              </span>
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="VB.NET" width="20" class="me-1"> VB.NET
+              </span>
+            </div>
+            <!-- Frameworks -->
+            <h6 class="mb-2 text-info">Frameworks</h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="20" class="me-1"> Flask
+              </span>
+            </div>
+            <!-- Databases -->
+            <h6 class="mb-2 text-info">Databases</h6>
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="20" class="me-1"> MySQL
+              </span>
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="20" class="me-1"> SQLite
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Column: About & GitHub Stats -->
+      <div class="col-lg-7">
+        <div class="card bg-secondary text-light border border-secondary shadow-sm mb-4">
+          <div class="card-body">
+            <h4 class="text-info mb-2">👋 About Me</h4>
+            <p>
+              Hi, I'm Norman! I interested in web development.
+            </p>
+          </div>
+        </div>
+        <div class="card bg-secondary text-light border border-secondary shadow-sm">
+          <div class="card-body">
+            <h6 class="text-info mb-3">📊 GitHub Stats</h6>
+            <div class="row g-2">
+              <div class="col-md-6">
+                <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SalasNorman&layout=compact&card_width=320&langs_count=5&theme=dracula" class="img-fluid mb-2" alt="Top Languages" />
+              </div>
+              <div class="col-md-6">
+                <img src="https://streak-stats.demolab.com?user=SalasNorman&mode=daily&theme=dracula" class="img-fluid mb-2" alt="GitHub Streak" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
