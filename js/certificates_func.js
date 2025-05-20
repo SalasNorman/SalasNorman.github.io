@@ -9,20 +9,20 @@ const badgeStyles = {
   "Google Cloud": "background-color: deepskyblue; color: white;"
 };
 
-// Render filter buttons
+// Render filter dropdowns
 function renderFilters() {
   const orgs = [...new Set(certificates.map(c => c.organization).filter(Boolean))];
   const techs = [...new Set(certificates.flatMap(c => c.techStack).filter(Boolean))];
 
-  const orgBtns = ['All', ...orgs].map(org =>
-    `<button class="btn btn-outline-dark btn-sm me-2 filter-btn" data-type="org" data-value="${org === 'All' ? '' : org}">${org}</button>`
-  ).join('');
-  document.getElementById("organization-filters").innerHTML = `<strong>Organization:</strong><br>${orgBtns}`;
+  // Populate organization dropdown
+  const orgDropdown = document.getElementById("organizationDropdown");
+  orgDropdown.innerHTML = `<option value="">All</option>` +
+    orgs.map(org => `<option value="${org}">${org}</option>`).join('');
 
-  const techBtns = ['All', ...techs].map(tech =>
-    `<button class="btn btn-outline-primary btn-sm me-2 filter-btn" data-type="tech" data-value="${tech === 'All' ? '' : tech}">${tech}</button>`
-  ).join('');
-  document.getElementById("techstack-filters").innerHTML = `<strong>TechStack:</strong><br>${techBtns}`;
+  // Populate techstack dropdown
+  const techDropdown = document.getElementById("techstackDropdown");
+  techDropdown.innerHTML = `<option value="">All</option>` +
+    techs.map(tech => `<option value="${tech}">${tech}</option>`).join('');
 }
 
 // Render certificates
@@ -64,16 +64,14 @@ window.addEventListener("DOMContentLoaded", () => {
   renderFilters();
   applyFilters();
 
-  // Filter button click (event delegation)
-  document.getElementById("filter-section").addEventListener("click", e => {
-    if (e.target.classList.contains("filter-btn")) {
-      if (e.target.dataset.type === "org") selectedOrg = e.target.dataset.value;
-      if (e.target.dataset.type === "tech") selectedTech = e.target.dataset.value;
-      // Highlight
-      document.querySelectorAll(`.filter-btn[data-type="${e.target.dataset.type}"]`).forEach(b=>b.classList.remove("active"));
-      e.target.classList.add("active");
-      applyFilters();
-    }
+  // Dropdown change events
+  document.getElementById("organizationDropdown").addEventListener("change", e => {
+    selectedOrg = e.target.value;
+    applyFilters();
+  });
+  document.getElementById("techstackDropdown").addEventListener("change", e => {
+    selectedTech = e.target.value;
+    applyFilters();
   });
 
   // Card click (event delegation)

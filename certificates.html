@@ -33,8 +33,22 @@
     <!-- Filter Controls -->
     <div id="filter-section" class="bg-secondary p-3 mb-4 rounded sticky-top border border-secondary" style="top: 0; z-index: 1020;">
       <h5 class="mb-3 text-light">Filter by</h5>
-      <div id="organization-filters" class="mb-3"></div>
-      <div id="techstack-filters" class="mb-3"></div>
+      <div class="row row-cols-2 g-3 align-items-end flex-nowrap" style="overflow-x:auto;">
+        <div class="col">
+          <label for="organizationDropdown" class="form-label">Organization:</label>
+          <select id="organizationDropdown" class="form-select bg-dark text-light border border-info">
+            <option value="">All</option>
+            <!-- Options will be populated by JS -->
+          </select>
+        </div>
+        <div class="col">
+          <label for="techstackDropdown" class="form-label">TechStack:</label>
+          <select id="techstackDropdown" class="form-select bg-dark text-light border border-info">
+            <option value="">All</option>
+            <!-- Options will be populated by JS -->
+          </select>
+        </div>
+      </div>
     </div>
 
     <!-- Certificate Grid -->
