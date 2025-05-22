@@ -9,53 +9,39 @@
 <body class="bg-dark text-light font-monospace">
 
   <!-- Navbar -->
-<div id="navbar-container"></div>
+  <div id="navbar-container"></div>
 
   <!-- Main Section -->
   <section class="container py-5">
-    <div class="row g-4 align-items-center">
+    <div class="row g-4 align-items-start">
       <!-- Left Column: Profile Card -->
       <div class="col-lg-5">
         <div class="card bg-secondary text-light border border-secondary shadow-sm">
           <div class="card-body text-center">
             <img src="assets/profile_pic.webp" class="img-fluid rounded-circle mb-3" alt="Profile Picture" style="width: 120px; height: 120px; object-fit: cover;">
             <h3 class="mb-1">Norman Salas</h3>
-            <p class="text-info mb-2">Web Development | Machine Learning</p>
-            <p class="mb-3 small text-light">
+            <p class="text-info mb-3">Web Development | Machine Learning</p>
+            <p class="mb-3 small">
               Looking for job.
             </p>
             <hr class="border-secondary">
-            <!-- Languages -->
-            <h6 class="mb-2 text-info">Languages</h6>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
-              <span class="badge bg-dark border border-info px-3 py-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20" class="me-1"> Python
-              </span>
-              <span class="badge bg-dark border border-info px-3 py-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="VB.NET" width="20" class="me-1"> VB.NET
-              </span>
-            </div>
-            <!-- Frameworks -->
-            <h6 class="mb-2 text-info">Frameworks</h6>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
-              <span class="badge bg-dark border border-info px-3 py-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="20" class="me-1"> Flask
-              </span>
-            </div>
-            <!-- Databases -->
-            <h6 class="mb-2 text-info">Databases</h6>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
-              <span class="badge bg-dark border border-info px-3 py-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="20" class="me-1"> MySQL
-              </span>
-              <span class="badge bg-dark border border-info px-3 py-2">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="20" class="me-1"> SQLite
-              </span>
+            <!-- Contact Info -->
+            <h6 class="mb-2 text-info">Contact</h6>
+            <div class="d-flex flex-column align-items-center gap-2 mb-2">
+              <a href="https://github.com/SalasNorman" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline-info w-100 text-start bg-dark">
+                <i class="bi bi-github me-2"></i> github.com/SalasNorman
+              </a>
+              <a href="https://www.linkedin.com/in/salasnorman/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline-info w-100 text-start bg-dark">
+                <i class="bi bi-linkedin me-2"></i> linkedin.com/in/salasnorman
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Right Column: About & GitHub Stats -->
+
+      <!-- Right Column: About & Skills -->
       <div class="col-lg-7">
         <div class="card bg-secondary text-light border border-secondary shadow-sm mb-4">
           <div class="card-body">
@@ -69,8 +55,45 @@
               Other Skills:
               <br>Operating System Installation (Windows/Linux)
               <br>
+            </p>
           </div>
         </div>
+
+        <!-- Skills Section -->
+        <div class="card bg-secondary text-light border border-secondary shadow-sm mb-4">
+          <div class="card-body">
+            <h4 class="text-info mb-2">👩‍💻 Tech Stack</h4>
+            <!-- Languages -->
+            <h6 class="mb-2 text-info">Languages</h6>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="20" class="me-1"> Python
+              </span>
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="VB.NET" width="20" class="me-1"> VB.NET
+              </span>
+            </div>
+            <!-- Frameworks -->
+            <h6 class="mb-2 text-info">Frameworks</h6>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="20" class="me-1"> Flask
+              </span>
+            </div>
+            <!-- Databases -->
+            <h6 class="mb-2 text-info">Databases</h6>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="20" class="me-1"> MySQL
+              </span>
+              <span class="badge bg-dark border border-info px-3 py-2">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="20" class="me-1"> SQLite
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Stats -->
         <div class="card bg-secondary text-light border border-secondary shadow-sm">
           <div class="card-body">
             <h6 class="text-info mb-3">📊 GitHub Stats</h6>
@@ -88,7 +111,10 @@
     </div>
   </section>
 
+  <!-- Scripts -->
   <script src="js/navbar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional: Bootstrap Icons for contact section -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </body>
 </html>
