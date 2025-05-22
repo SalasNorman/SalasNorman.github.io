@@ -6,7 +6,7 @@ const projects = [
     link: "https://github.com/SalasNorman/SalasNorman.github.io"
   },
   {
-    image: "",
+    image: "assets/projects/flask-phonebook.webp",
     title: "Basic Website using PHP",
     description: "TA simple phonebook application built using Flask with SQLite. It showcases basic CRUD (Create, Read, Update, Delete) operations for managing contacts.",
     link: "https://github.com/SalasNorman/exercise101"
