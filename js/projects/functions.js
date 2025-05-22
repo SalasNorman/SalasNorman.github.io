@@ -14,7 +14,7 @@ function renderProjects(list) {
 }
 
 function filterProjects() {
-  const q = document.getElementById('searchBar').value.toLowerCase();
+  const q = document.getElementById('searchBar').value.trim().toLowerCase();
   renderProjects(projects.filter(p =>
     p.title.toLowerCase().includes(q) || (p.description && p.description.toLowerCase().includes(q))
   ));
