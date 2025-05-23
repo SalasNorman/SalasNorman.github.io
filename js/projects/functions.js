@@ -6,7 +6,7 @@ function renderProjects(list) {
         <div class="card-body">
           <h5 class="card-title">${project.title}</h5>
           <p class="card-text">${project.description}</p>
-          <a href="${project.link}" class="btn btn-outline-info" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          <a href="${project.link}" class="btn btn-outline-info bg-dark" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
       </div>
     </div>
