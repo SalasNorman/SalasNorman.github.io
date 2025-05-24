@@ -1,67 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Certificates</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
+
 <body class="bg-dark text-light font-monospace">
 
   <!-- Navbar -->
-<div id="navbar-container"></div>
+  <div id="navbar-container"></div>
 
   <!-- Main Section -->
-  <section class="container py-5">
+  <main class="container py-5">
     <h2 class="mb-4 text-info">My Certifications</h2>
 
-    <!-- Filter Controls -->
-    <div id="filter-section" class="bg-secondary p-3 mb-4 rounded sticky-top border border-secondary" style="top: 0; z-index: 1020;">
-      <h5 class="mb-3 text-light">Filter by</h5>
-      <div class="row row-cols-2 g-3 align-items-end flex-nowrap" style="overflow-x:auto;">
-        <div class="col">
-          <label for="organizationDropdown" class="form-label">Organization:</label>
-          <select id="organizationDropdown" class="form-select bg-dark text-light border border-info">
+    <!-- Filter Section -->
+    <div class="bg-secondary p-3 mb-4 rounded sticky-top border border-secondary">
+      <h5 class="mb-3">Filter by</h5>
+      <div class="row gx-3">
+        <div class="col-md">
+          <label for="pathwayDropdown" class="form-label">Pathway</label>
+          <select id="pathwayDropdown" class="form-select border-warning">
             <option value="">All</option>
-            <!-- Options will be populated by JS -->
+            <option value="Data Science">Data Science</option>
           </select>
         </div>
-        <div class="col">
-          <label for="techstackDropdown" class="form-label">TechStack:</label>
-          <select id="techstackDropdown" class="form-select bg-dark text-light border border-info">
+        <div class="col-md">
+          <label for="organizationDropdown" class="form-label">Organization</label>
+          <select id="organizationDropdown" class="form-select border-info">
             <option value="">All</option>
-            <!-- Options will be populated by JS -->
+          </select>
+        </div>
+        <div class="col-md">
+          <label for="techstackDropdown" class="form-label">Tech Stack</label>
+          <select id="techstackDropdown" class="form-select border-light">
+            <option value="">All</option>
           </select>
         </div>
       </div>
     </div>
 
-    <!-- Certificate Grid -->
+    <!-- Certificates Grid -->
     <div class="row" id="certificates-container"></div>
-  </section>
+  </main>
 
   <!-- Modal -->
-  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-secondary text-light border border-secondary rounded">
+  <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-secondary text-light border-secondary rounded">
         <div class="modal-header border-bottom border-secondary">
           <h5 class="modal-title" id="certificateModalLabel"></h5>
           <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <img id="modalCertImage" src="" alt="Certificate" class="img-fluid w-100 mb-2" />
+          <img id="modalCertImage" src="" alt="Certificate" class="img-fluid mb-3" />
           <div id="modalCertBadges" class="mb-2"></div>
-          <small class="text-muted fst-italic">Image contains blurred areas for privacy reasons.</small>
+          <div class="text-muted small fst-italic">Image contains blurred areas for privacy reasons.</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Scripts -->
-  <script src="/js/certificates/data.js"></script>
-  <script src="/js/certificates/function.js"></script>
+  <script src="js/certificates/function.js"></script>
   <script src="js/navbar.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
+
 </html>
